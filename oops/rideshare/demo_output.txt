@@ -1,0 +1,152 @@
+﻿+-------------------------------------------------+
+python : Traceback 
+(most recent call 
+last):
+At line:1 char:45
++ ... thon -m pytest 
+tests/ -v --tb=short 
+2>&1; python demo.py 
+2>&1 | Out-F ...
++                     
+                      
+    
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Traceback    
+ (most recent call    
+ last)::String) [    
+], RemoteExceptio    n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  File "C:\Users\Ankit
+.Sadhu1\Desktop\python
+\rideshare\demo.py", 
+line 332, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\Ankit
+.Sadhu1\Desktop\python
+\rideshare\demo.py", 
+line 54, in run
+    console.print(Pane
+l.fit(
+    ~~~~~~~~~~~~~^^^^^
+^^^^^^
+        "[bold 
+cyan]\U0001f697  
+Ride-Sharing System ù 
+Live Demo[/]\n"
+        ^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
+        "[dim]Drivers 
+╖ Riders ╖ Matching ╖ 
+Pricing ╖ Ratings[/]",
+        ^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+        
+border_style="cyan",
+        
+^^^^^^^^^^^^^^^^^^^^
+    ))
+    ^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\consol
+e.py", line 1697, in 
+print
+    with self:
+         ^^^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\consol
+e.py", line 870, in 
+__exit__
+    
+self._exit_buffer()
+    
+~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\consol
+e.py", line 826, in 
+_exit_buffer
+    
+self._check_buffer()
+    
+~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\consol
+e.py", line 2042, in 
+_check_buffer
+    
+self._write_buffer()
+    
+~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\consol
+e.py", line 2078, in 
+_write_buffer
+    legacy_windows_ren
+der(buffer, LegacyWind
+owsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\_windo
+ws_renderer.py", line 
+17, in 
+legacy_windows_render
+    term.write_styled(
+text, style)
+    ~~~~~~~~~~~~~~~~~^
+^^^^^^^^^^^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\_win32
+_console.py", line 
+441, in write_styled
+    
+self.write_text(text)
+    
+~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Ankit
+.Sadhu1\AppData\Roamin
+g\Python\Python314\sit
+e-packages\rich\_win32
+_console.py", line 
+402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Python314\L
+ib\encodings\cp1252.py
+", line 19, in encode
+    return codecs.char
+map_encode(input,self.
+errors,encoding_table)
+[0]
+           ~~~~~~~~~~~
+~~~~~~~~~~^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode character 
+'\U0001f697' in 
+position 0: character 
+maps to <undefined>
+| 
