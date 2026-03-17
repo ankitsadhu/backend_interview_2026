@@ -46,12 +46,21 @@ Design patterns are **proven, reusable solutions** to common software design pro
 
 #### ❌ Naive Approach — Broken with Threads
 
+object.__new__(cls) is Python's raw memory allocator — it:
+
+Allocates a new object in memory
+Sets its type to cls
+Returns the uninitialized instance (before __init__ runs)
+
 ```python
 class NaiveSingleton:
     _instance = None
 
     def __new__(cls):
         if cls._instance is None:
+            # super().__new__(cls) is the idiomatic way to say *"allocate a fresh instance the normal way, but I'll control when/whether it happens."*
+            # super() here resolves to `object` (parent of all classes), 
+            #so this calls object.__new__(NaiveSingleton)
             cls._instance = super().__new__(cls)
         return cls._instance
 
