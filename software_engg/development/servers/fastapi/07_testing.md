@@ -1,5 +1,10 @@
 # Testing FastAPI Applications
 
+misssing
+- magic mock
+- deps mock
+- app.state.
+
 ## TestClient (Sync)
 
 ```python
